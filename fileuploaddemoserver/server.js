@@ -40,9 +40,14 @@ server.put('/uploadFile', (req, res) => {
     // };
 })
 
+server.get('/something', (req, res) => {
+    console.log('Received at server')
+    res.json({'message':'Success!'})
+})
+
 server.post('/uploadFilePost', (req, res) => {
     try {
-        // console.log(req.files)
+        // console.log(req.body)
         if(!req.files) {
             res.send({
                 status: false,
