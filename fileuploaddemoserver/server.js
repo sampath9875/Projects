@@ -76,6 +76,11 @@ server.post('/uploadFilePost', (req, res) => {
     }
 });
 
+server.post('/submitForm', (req, res) => {
+    console.log(req.body);
+    res.json({'message': 'Form data received successfully!'})
+})
+
 
 server.listen(8000, () => {
     console.log("Server started!");
