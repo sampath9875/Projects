@@ -21,7 +21,7 @@ const FileUploadComponent = (props) => {
 
     const uploadFilePost = () => {
         // let url = 'http://localhost:8000/uploadFilePost';
-        let url = 'http://ec2-3-80-148-178.compute-1.amazonaws.com:8000/uploadFilePost'
+        let url = ' https://cors-everywhere.herokuapp.com/http://ec2-3-80-148-178.compute-1.amazonaws.com:8000/uploadFilePost'
 
         let form = new FormData();
         form.append('file', file, fileName)
